@@ -1,32 +1,66 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body{
+  background: #164c76;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Header{
+  width: 100%;
+  float: left;
+  background: #072841;
+  text-align: center;
+  padding: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.ContentBody{
+  float: left;
+  width: 100%;
+  padding: 25px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header h1{
+  text-align: center;
+}
+.ToDOListBox{
+  max-height: 450px;
+  overflow: auto;
+}
+.ToDOList {
+  float: left;
+  width: 100%;
+  padding: 8px 15px;
+  margin-top: 15px;
+  color: #fff;
+  text-align: left;
+}
+.ToDOList.active{
+  background: #4caf50;
+}
+.ToDOList.complete{
+  background: #939393;
+}
+.input-group .form-control{
+  height: 60px;
+  border-radius: 0px;
+  border: none;
+}
+.input-group .btn-primary{
+  height: 60px;
+  width: 120px;
+  border-radius: 0px;
+}
+.input-group .btn-primary:focus,.input-group .btn-primary:active{
+  outline: none;
+  border: none;
+}
+.Footer{
+  float: left;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 10;
+  color: #777;
 }
